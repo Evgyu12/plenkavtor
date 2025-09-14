@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О компании - Plenkavtor</title>
+    <link rel="stylesheet" href="assets/css/deepseek_css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Дополнительные стили для страницы "О нас" */
+        .about-page {
+            padding: 60px 0;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            font-size: 1.1rem;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .stages-section {
+            margin: 60px 0;
+        }
+
+        .stages-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2rem;
+        }
+
+        .stages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(550px, 600px)); /* Ширина каждой карточки */
+            justify-content: center; /* Центрируем сетку по центру */
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .stage-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stage-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stage-image {
+            width: 100%;
+            overflow: hidden;
+            background: #f8f8f8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stage-image img {
+            width: 120%;
+            height: 120%;
+            object-fit: contain; /* Показывает всё изображение целиком */
+            transition: transform 0.3s ease;
+        }
+
+        .stage-info {
+            padding: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .stages-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Plenka<span>vtor</span></h1>
+                <p>Приём вторсырья</p>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="onas.html" class="active">О нас</a></li>
+                    <li><a href="index.html#contact">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="contact-phone">
+                <a href="tel:+7(917)466-17-50">+7(917)466-17-50</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="about-page">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Здравствуйте, Уважаемые клиенты!</h2>
+                    <p>Меня зовут Самир, я открыл ИП по сбору полиэтилена и макулатуры.</p>
+                    <p>Мне пришла идея открыть пункт приёма вторсырья с последующей реализацией и тем самым хоть немного внести вклад в защиту природы.</p>
+                    <p>Отнесите полиэтилен и бумагу не на мусорную свалку, а в пункт приёма. Заботясь о природе, мы, прежде всего заботимся о нашем здоровье!</p>
+                </div>
+            </div>
+
+            <section class="stages-section">
+                <h2 class="stages-title">Этапы работы</h2>
+
+                <div class="stages-grid">
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="./assets/images/step_1.jpg" alt="Этап 1: Закупка сырья">
+                        </div>
+                        <div class="stage-info">
+                            <p>Закупка пленки, картона и бумаги. Определение массы сырья.</p>
+                        </div>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="./assets/images/step_2.jpg" alt="Этап 2: Сортировка">
+                        </div>
+                        <div class="stage-info">
+                            <p>Сортировка выполняется вручную, отделяю полиэтилен по видам (ПВД, ПНД, Стрейч, цветная и.т.д Картон и пленку также очищаю от скотча или других элементов, если они имеются.</p>
+                        </div>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="./assets/images/step_3.jpg" alt="Этап 3: Измельчение">
+                        </div>
+                        <div class="stage-info">
+                            <p>Полиэтилен направляется в промышленный агрегат, такой как-дробилка, где происходит измельчения до однородной фракции.</p>
+                        </div>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="./assets/images/step_4.jpg" alt="Этап 4: Экструзия">
+                        </div>
+                        <div class="stage-info">
+                            <p>После дробилки сырье засыпается в экструдер где получается экстракция плёнки.</p>
+                        </div>
+                    </div>
+
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="./assets/images/step_5.jpg" alt="Этап 5: Готовая продукция">
+                        </div>
+                        <div class="stage-info">
+                            <p>Готовая продукция отправляется на склад.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-contact">
+                <p>+7(917)466-17-50</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Plenkavtor. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
